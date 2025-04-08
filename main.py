@@ -4,7 +4,7 @@ import jsons
 from Class_ModelResponse import ModelResponse
 
 # Замените 'YOUR_BOT_TOKEN' на ваш токен от BotFather
-API_TOKEN = 'YOUR_BOT_TOKEN'
+API_TOKEN = '7838927718:AAFpt4yE7MF2eogRlcaMkGaPpe6kbjFmnY8'
 bot = telebot.TeleBot(API_TOKEN)
 
 # Хранилище контекста для каждого пользователя
@@ -17,7 +17,8 @@ def send_welcome(message):
         "Привет! Я ваш Telegram бот.\n"
         "Доступные команды:\n"
         "/start - вывод всех доступных команд\n"
-        "/model - выводит название используемой языковой модели\n"
+        "/model - вывод названия используемой языковой модели\n"
+        "/clear - очистка контекста\n"
         "Отправьте любое сообщение, и я отвечу с помощью LLM модели."
     )
     bot.reply_to(message, welcome_text)
